@@ -71,7 +71,7 @@ export default function AppShowcase() {
             className="relative"
           >
             <img
-              src="/attached_assets/unsubscribe.png"
+              src="/unsubscribe.png"
               alt="Clean Apple-style interface showing subscription management"
               className="rounded-2xl shadow-apple-lg w-full"
             />
