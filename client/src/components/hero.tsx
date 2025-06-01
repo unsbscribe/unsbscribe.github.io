@@ -54,7 +54,7 @@ export default function Hero() {
               {/* App screenshot */}
               <div className="relative overflow-hidden">
                 <img
-                  src="/attached_assets/unsubscribe.png"
+                  src="/unsubscribe.png"
                   alt="Unsubscribe dashboard interface showing subscription management"
                   className="w-full rounded-t-lg"
                 />
