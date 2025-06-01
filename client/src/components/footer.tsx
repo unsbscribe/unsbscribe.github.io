@@ -30,7 +30,7 @@ export default function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <img 
-                src="/attached_assets/UNSBSCRIBE.png" 
+                src="/UNSBSCRIBE.png" 
                 alt="Unsubscribe logo" 
                 className="w-8 h-8 rounded-lg"
               />
