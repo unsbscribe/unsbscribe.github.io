@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600;700;800;900&family=SF+Pro+Text:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%; /* #FFFFFF */
+  --foreground: 20 14% 4%; /* #1D1D1F - Apple black */
+  --muted: 210 11% 96%; /* #F5F5F7 - Apple subtle */
+  --muted-foreground: 0 0% 45%; /* #737373 */
+  --popover: 0 0% 100%; /* #FFFFFF */
+  --popover-foreground: 20 14% 4%; /* #1D1D1F */
+  --card: 0 0% 100%; /* #FFFFFF */
+  --card-foreground: 20 14% 4%; /* #1D1D1F */
+  --border: 0 0% 90%; /* #E5E5E5 */
+  --input: 0 0% 90%; /* #E5E5E5 */
+  --primary: 207 90% 54%; /* #007AFF - Apple blue */
+  --primary-foreground: 0 0% 98%; /* #FAFAFA */
+  --secondary: 210 11% 96%; /* #F2F2F7 - Apple gray */
+  --secondary-foreground: 20 14% 4%; /* #1D1D1F */
+  --accent: 210 11% 96%; /* #F2F2F7 */
+  --accent-foreground: 20 14% 4%; /* #1D1D1F */
+  --destructive: 0 84% 60%; /* #FF3B30 */
+  --destructive-foreground: 0 0% 98%; /* #FAFAFA */
+  --ring: 207 90% 54%; /* #007AFF */
+  --radius: 0.5rem;
+  
+  /* Apple-specific colors */
+  --apple-blue: 207 90% 54%; /* #007AFF */
+  --apple-gray: 210 11% 96%; /* #F2F2F7 */
+  --apple-black: 20 14% 4%; /* #1D1D1F */
+  --apple-green: 145 80% 42%; /* #34C759 */
+  --apple-subtle: 210 11% 96%; /* #F5F5F7 */
+}
+
+.dark {
+  --background: 240 10% 4%; /* #0A0A0A */
+  --foreground: 0 0% 98%; /* #FAFAFA */
+  --muted: 240 4% 16%; /* #262626 */
+  --muted-foreground: 240 5% 65%; /* #A1A1A1 */
+  --popover: 240 10% 4%; /* #0A0A0A */
+  --popover-foreground: 0 0% 98%; /* #FAFAFA */
+  --card: 240 10% 4%; /* #0A0A0A */
+  --card-foreground: 0 0% 98%; /* #FAFAFA */
+  --border: 240 4% 16%; /* #262626 */
+  --input: 240 4% 16%; /* #262626 */
+  --primary: 207 90% 54%; /* #007AFF */
+  --primary-foreground: 0 0% 98%; /* #FAFAFA */
+  --secondary: 240 4% 16%; /* #262626 */
+  --secondary-foreground: 0 0% 98%; /* #FAFAFA */
+  --accent: 240 4% 16%; /* #262626 */
+  --accent-foreground: 0 0% 98%; /* #FAFAFA */
+  --destructive: 0 62% 31%; /* #7F1D1D */
+  --destructive-foreground: 0 0% 98%; /* #FAFAFA */
+  --ring: 207 90% 54%; /* #007AFF */
+  
+  /* Apple-specific colors for dark mode */
+  --apple-blue: 207 90% 54%; /* #007AFF */
+  --apple-gray: 240 4% 16%; /* #262626 */
+  --apple-black: 0 0% 98%; /* #FAFAFA */
+  --apple-green: 145 80% 42%; /* #34C759 */
+  --apple-subtle: 240 4% 16%; /* #262626 */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sf-pro antialiased bg-background text-foreground;
+    font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-sf-pro {
+    font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  }
+  
+  .font-sf-pro-display {
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  }
+  
+  .text-apple-blue {
+    color: hsl(var(--apple-blue));
+  }
+  
+  .text-apple-gray {
+    color: hsl(var(--apple-gray));
+  }
+  
+  .text-apple-black {
+    color: hsl(var(--apple-black));
+  }
+  
+  .text-apple-green {
+    color: hsl(var(--apple-green));
+  }
+  
+  .bg-apple-blue {
+    background-color: hsl(var(--apple-blue));
+  }
+  
+  .bg-apple-gray {
+    background-color: hsl(var(--apple-gray));
+  }
+  
+  .bg-apple-black {
+    background-color: hsl(var(--apple-black));
+  }
+  
+  .bg-apple-green {
+    background-color: hsl(var(--apple-green));
+  }
+  
+  .bg-apple-subtle {
+    background-color: hsl(var(--apple-subtle));
+  }
+  
+  .shadow-apple {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .shadow-apple-lg {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+  }
+}
